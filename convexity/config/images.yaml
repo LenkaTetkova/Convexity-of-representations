@@ -1,0 +1,26 @@
+modality: images
+model_name: data2vec_finetuned
+n_per_class: 10
+classes: [n03028079, n01440764, n02102040, n02979186, n03000684]
+layers: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+n_neighbors: 10
+n_paths: 5000
+n_sampled: 10
+path_features: ./data/features/imagenet/
+path_data: ./data/imagenet/
+path_models: ./models/
+path_outputs: ./outputs/
+test_data: True
+fig_width: 1.5
+font_size: 8.0
+dpi: 100
+lr: 5e-5
+lr_scheduler_type: "linear"
+num_train_epochs: 3
+weight_decay: 0
+batch_size: 64
+from_checkpoint: False
+checkpoint_name: checkpoint
+in_channels: 768
+n_classes: 1000
+seed: 42
